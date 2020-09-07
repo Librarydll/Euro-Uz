@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/slideshow.css" />
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header id="site-header" class="site-header header1 is-sticky">
+        <div id="header_area" class="default-bg-color">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+                    <a class="navbar-brand logo" id="site-icon-id" asp-action="Index" asp-controller="Home">Euro.uz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active nav-line">
+                                <a class="nav-link" asp-action="Index" asp-controller="Home">Главная</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link" asp-action="ListUniversity" asp-controller="University">Технологии</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link" asp-action="ListUniversity" asp-controller="University">Оборудования</a>
+                            </li>
+                        </ul>
+                        <div class="form-inline my-2 my-lg-0">
+                            <ul class="info-list">
+                                <li>
+                                <i class="fa fa-map-marker">
+                                    </i> 	                        
+                                140108 Узбекистан Самарканд	                   
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>	                       
+                                    +998906004901
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>	                       
+                                    bucher@euro.uz
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </nav>
+               
+            </div>
+            <div>
+                
+            </div>
+        </div>
+
+
+    </header>
+   
+    @RenderBody()
+
+
+<footer class="mt-auto">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="info-list">
+                        <li>
+                            <i class="fa fa-map-marker">
+                            </i>
+                            140108 Узбекистан Самарканд
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            +998906004901
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            bucher@euro.uz
+                        </li>
+                    </ul>
+                </div>             
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/slideshow.js"></script>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

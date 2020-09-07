@@ -20,15 +20,15 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarColor02">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active nav-line">
+                        <ul class="navbar-nav mr-auto" id="navUl"> 
+                            <li class="nav-item nav-line">
                                 <a class="nav-link" asp-action="Index" asp-controller="Home">Главная</a>
                             </li>
                             <li class="nav-item nav-line">
-                                <a class="nav-link" asp-action="ListUniversity" asp-controller="University">Технологии</a>
+                                <a class="nav-link" asp-action="Index" asp-controller="Technology">Технологии</a>
                             </li>
                             <li class="nav-item nav-line">
-                                <a class="nav-link" asp-action="ListUniversity" asp-controller="University">Оборудования</a>
+                                <a class="nav-link" asp-action="Index" asp-controller="Equipment">Оборудования</a>
                             </li>
                         </ul>
                         <div class="form-inline my-2 my-lg-0">
@@ -91,7 +91,7 @@
 </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js"></script>
     <script src="~/js/slideshow.js"></script>
     @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
     @RenderSection("Scripts", required: false)
